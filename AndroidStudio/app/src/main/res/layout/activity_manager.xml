@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerActivity">
+
+    <Button
+        android:id="@+id/button_waterLevel"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="50dp"
+        android:text="수위 모니터링"
+        app:layout_constraintBottom_toTopOf="@+id/button_waterQuality"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_waterQuality"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:text="수질 모니터링"
+        app:layout_constraintBottom_toTopOf="@+id/button_greenTide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_waterLevel" />
+
+    <Button
+        android:id="@+id/button_greenTide"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="50dp"
+        android:text="녹조 모니터링"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_waterQuality" />
+</androidx.constraintlayout.widget.ConstraintLayout>
